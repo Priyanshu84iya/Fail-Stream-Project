@@ -1,0 +1,298 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before{
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: url(img/Wind\ Breaker\ main.jpg)no-repeat center center/cover;
+backdrop-filter: blur(5px);
+opacity: .2;
+}
+
+header{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border: 4px solid #00ff00;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+header .wind_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: .8;
+}
+
+header .mic_dot{
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    background: #00ff00
+    ;
+    left: 47%;
+    top: -3px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .mic_dot .mic {
+    width: 30px;
+    height: 3px;
+    background: floralwhite;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+header .mic_dot .dot {
+    width: 4px;
+    height: 4px;
+    background: floralwhite;
+    border-radius: 50%;
+    margin-bottom: 1px;
+    }
+
+    header nav {
+        width: 95%;
+        color: #fff;
+        height: 7.5%;
+        /* border: 1px solid #00ff00; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+s
+    header nav .brand {
+        width: 20%;
+        height: 100%;
+        /* border: 1px solid white; */
+        color: aliceblue;
+        font-family: system-ui;
+         display: flex;
+         align-items: flex-end;
+         justify-items: flex-start;
+    }
+
+    header nav ul {
+        width: 60%;
+        height: 100%;
+        /* border: 1px solid #00ff00 */
+        ;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        list-style-type: none;
+        padding: 3px 10px;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-family: system-ui;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all .3 ease-in-out;
+    }
+
+    header nav ul li a:hover {
+        color: #00ff00;
+   }
+   header nav .search{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+   }
+   header nav .search input{
+    width: 90%;
+    padding: 5px 0px 3px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+   }
+
+   header section{
+    /* border: 1px solid #fff; */
+    width: 95%;
+    height: 56.5%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+   }
+
+
+   header section .content{
+    /* border: 1px solid #fff; */
+    width: 400px;
+    height: 70%;
+    padding-left: 40px;
+   }
+
+   header section .content h1{
+   color: #fff;
+   font-family: system-ui;
+   font-size: 35px;
+   }
+
+   header section .content h1 span{
+   background: rgb(0, 255, 0);
+   padding: 0px 15px;
+    }
+
+    header section .content h3{
+    color: #fff;
+    font-family: system-ui;
+    }
+
+    header section .content .rateing{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+    color: rgb(235, 235, 32);
+    }
+
+    header section .content .subtitle{
+    color: rgb(210, 201, 201);
+    margin-top: 3px;
+    }
+
+    header section .content .subtitle span{
+    padding: 0px 5px;
+    }
+
+    header section .content .btns{
+    margin-top: 5px;
+    display: flex;
+    }
+
+    header section .content .btns button{
+    padding: 6px 0;
+    width: 70px;
+    margin-inline-end: 10px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer; 
+    transition: all .3s ease-in-out;
+    filter: brightness(150%);
+    box-shadow: -5px -5px 30px rgb(0, 255, 0, 0.3),
+                5px 5px  30px rgba(0, 255, 0, 0.3)
+    }
+
+    header section .content .btns button:hover{
+        background: #00ff00;
+    }
+
+    header section .content p{
+        color: #000000;
+        font-weight: bold;
+        font-size: 10px;
+        font-family: sans-serif;
+        margin-top: 15px;
+    }
+
+    /* Card Start */
+
+    header .cards{
+    /* border: 1px solid #fff; */
+    width: 95%;
+    height: 36%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    header .cards .card{
+    width: 125px;
+    height: 185px;
+    /* border: 1px solid white; */
+    margin: 0px 5px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    }
+
+    header .cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    }
+
+    header .cards .card .content{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    }
+
+    header .cards .card .content .slider{
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start content off-screen to the right */
+    white-space: nowrap; /* Prevent wrapping */
+    animation: moveContent 5s linear infinite; 
+    }
+
+    @keyframes moveContent {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+    }
+
+
+    header .cards .card .content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background: rgb(185, 185, 185, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    }
+
+    header .cards .card .content h4{
+    color: #fff;
+    font-size: 13px;
+    }
+
+    header .cards .card .content p{
+    color: #fff;
+    font-size: 10px;
+    } 
